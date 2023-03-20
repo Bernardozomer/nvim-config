@@ -5,7 +5,6 @@ return {
 	opts = {
 		current_line_blame = true,
 		signs = { untracked = { text  = '┊'} },
-		word_diff = true,
 	},
 	config = true,
 }
