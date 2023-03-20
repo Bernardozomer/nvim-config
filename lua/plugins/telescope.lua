@@ -3,9 +3,7 @@ return {
 	'nvim-telescope/telescope.nvim',
 	tag = '0.1.1',
 	dependencies = { 'nvim-lua/plenary.nvim' },
-	config = {
-		require('telescope').load_extension('projects')
-	},
+	config = true,
 	keys = {
 		-- vim pickers
 		{ '<leader>fb', '<cmd>lua require(\'telescope.builtin\').buffers()<CR>' },
