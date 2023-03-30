@@ -1,5 +1,8 @@
 local opts = {}
 
+-- disable search highlighting until next search
+vim.api.nvim_set_keymap('n', '<C-s>', ':noh<CR>', opts)
+
 -- improve buffer navigation
 vim.api.nvim_set_keymap('n', '<C-l>', ':bnext<CR>', opts)
 vim.api.nvim_set_keymap('n', '<C-h>', ':bprevious<CR>', opts)
