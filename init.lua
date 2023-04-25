@@ -4,6 +4,8 @@ require('keybinds')
 require('lazy-nvim')
 
 -- set colorscheme
+vim.o.bg = 'dark'
+
 local colorscheme = 'gruvbox-material'
 local colorscheme_set, _ = pcall(vim.cmd, 'colorscheme ' .. colorscheme)
 
