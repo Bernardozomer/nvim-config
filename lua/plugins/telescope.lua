@@ -20,5 +20,7 @@ return {
 		{ '<leader>gr', '<cmd>lua require(\'telescope.builtin\').lsp_references()<CR>' },
 		-- extension: projects
 		{ '<leader>ep', '<cmd>lua require(\'telescope\').extensions.projects.projects()<CR>' },
+		-- extension: file browser
+		{ '<leader>eb', '<cmd>lua require(\'telescope\').extensions.file_browser.file_browser()<CR>' },
 	},
 }
