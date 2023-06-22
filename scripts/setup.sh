@@ -16,6 +16,7 @@ function yes_or_no {
 	done
 }
 
+# Install latest Neovim AppImage
 yes_or_no "${BOLD}${GREEN}?${NORMAL} ${BOLD}Install Neovim AppImage?${NORMAL}" && {
 	NVIM_URL="https://github.com/neovim/neovim/releases/download/stable/nvim.appimage"
 	NVIM_DIR=$HOME/app
@@ -28,8 +29,10 @@ yes_or_no "${BOLD}${GREEN}?${NORMAL} ${BOLD}Install Neovim AppImage?${NORMAL}" &
 	cd nvim
 	curl -Ls $NVIM_URL --output nvim.appimage
 	chmod +x nvim.appimage
-	./nvim.appimage +qa
+	# Test if Neovim can be run
+	./nvim.appimage --headless --cmd "qa"
 	ret=$?
+
 	if [ $ret -ne 0 ]; then
 		echo "Cannot run nvim as appimage"
 		exit 1
@@ -39,6 +42,7 @@ yes_or_no "${BOLD}${GREEN}?${NORMAL} ${BOLD}Install Neovim AppImage?${NORMAL}" &
 	fi
 }
 
+# Install nerd font
 yes_or_no "${BOLD}${GREEN}?${NORMAL} ${BOLD}Install FiraCode Nerd Font?${NORMAL}" && {
 	FONT_URL="https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/FiraCode.zip"
 	FONT_NAME="fira-code-nf"
