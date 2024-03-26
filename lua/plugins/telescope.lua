@@ -1,7 +1,7 @@
 -- highly extensible fuzzy finder over lists
 return {
 	'nvim-telescope/telescope.nvim',
-	tag = '0.1.1',
+	-- tag = '0.1.1',
 	dependencies = { 'nvim-lua/plenary.nvim' },
 	config = true,
 	keys = {
@@ -19,8 +19,8 @@ return {
 		{ '<leader>gco', '<cmd>lua require(\'telescope.builtin\').lsp_outgoing_calls()<CR>' },
 		{ '<leader>gr', '<cmd>lua require(\'telescope.builtin\').lsp_references()<CR>' },
 		-- extension: projects
-		{ '<leader>ep', '<cmd>lua require(\'telescope\').extensions.projects.projects()<CR>' },
+		{ '<leader>fp', '<cmd>lua require(\'telescope\').extensions.projects.projects()<CR>' },
 		-- extension: file browser
-		{ '<leader>eb', '<cmd>lua require(\'telescope\').extensions.file_browser.file_browser()<CR>' },
+		{ '<leader>fs', '<cmd>lua require(\'telescope\').extensions.file_browser.file_browser()<CR>' },
 	},
 }

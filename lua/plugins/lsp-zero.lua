@@ -26,11 +26,8 @@ return {
 		{'hrsh7th/cmp-nvim-lsp'},     -- required
 		{'hrsh7th/cmp-buffer'},       -- optional
 		{'hrsh7th/cmp-path'},         -- optional
-		{'saadparwaiz1/cmp_luasnip'}, -- optional
-		{'hrsh7th/cmp-nvim-lua'},     -- optional
 
 		-- snippets
-		{'L3MON4D3/LuaSnip'},             -- required
 		{'rafamadriz/friendly-snippets'}, -- optional
 	}
 }

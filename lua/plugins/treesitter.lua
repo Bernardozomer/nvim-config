@@ -18,8 +18,6 @@ return {
 			'fortran',
 			'gitcommit',
 			'gitignore',
-			'help',
-			'java',
 			'json',
 			'json5',
 			'latex',
